@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131313;
+}
+
+.grid-init {
+    color: white;
+    width: 1171px;
+    height: 552px;
+    margin: auto;
+    margin-top: 107px;
+}
+
+.box-init {
+    /*border: 1px solid rebeccapurple;*/
+}
+
+.box_2, .box_3, .box_4 {
+    color: rgba(255, 255, 255, 0.30);
+    font-family: Yeseva One;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%; /* 19.404px */
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.box_1 :hover {
+    color: #E3B873;
+}
+
+.box_7, .box_8, .box_9, .box_10 {
+    color: #E3B873;
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%; /* 24.948px */
+    text-transform: uppercase;
+}
+
+.box_1 {
+    grid-area: gridBox_1;
+}
+
+.box_2 {
+    grid-area: gridBox_2;
+}
+
+.box_3 {
+    grid-area: gridBox_3;
+}
+
+.box_4 {
+    grid-area: gridBox_4;
+}
+
+.box_5 {
+    grid-area: gridBox_5;
+
+    color: #E3B873;
+    font-family: Yeseva One;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.6%; /* 37.422px */
+    letter-spacing: -1.89px;
+    text-transform: uppercase;
+}
+
+.box_6 {
+    grid-area: gridBox_6;
+    width: 442px;
+
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190.96%; /* 26.734px */
+}
+
+.box_7 {
+    grid-area: gridBox_7;
+}
+
+.box_8 {
+    grid-area: gridBox_8;
+}
+
+.box_9 {
+    grid-area: gridBox_9;
+}
+
+.box_10 {
+    grid-area: gridBox_10;
+}
+
+.box_11 {
+    grid-area: gridBox_11;
+    
+}
+
+.image {
+    grid-area: gridBox_12;
+
+    background-image:
+        url("./image/image1.png");
+    background-size: cover;
+}
+
+.city, .apartmentArea, .repairTime, .repairCost {
+    color: #FFF;
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 163.68%; /* 21.278px */
+    text-transform: none;
+}
+
+
+.select {
+    color: #E3B873;
+}
+
+.prev {
+    cursor: pointer;
+}
+.next {
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "gridBox_1 gridBox_1 gridBox_2 gridBox_3 gridBox_4"
+    "gridBox_5 gridBox_5 gridBox_12 gridBox_12 gridBox_12"
+    "gridBox_6 gridBox_6 gridBox_12 gridBox_12 gridBox_12"
+    "gridBox_7 gridBox_8 gridBox_12 gridBox_12 gridBox_12"
+    "gridBox_9 gridBox_10 gridBox_12 gridBox_12 gridBox_12"
+    "gridBox_11 gridBox_11 gridBox_12 gridBox_12 gridBox_12"
+    ;
+    grid-template-columns: 190px 302px 254px 169px 256px;
+    grid-template-rows: 70px 100px 128px 107px 134px 13px;
+}
